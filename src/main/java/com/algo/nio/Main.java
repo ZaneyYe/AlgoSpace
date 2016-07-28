@@ -21,7 +21,7 @@ public class Main {
             file = new RandomAccessFile("E://1.txt","rw");
             FileChannel channel = file.getChannel();
 
-            ByteBuffer buf = ByteBuffer.allocate(1024);
+            ByteBuffer buf = ByteBuffer.allocate(1);
             int bytesRead = channel.read(buf);
             System.out.println(bytesRead);
             while(bytesRead != -1){
