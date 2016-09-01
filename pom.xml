@@ -102,5 +102,12 @@
 			<version>1.7</version>
 		</dependency>
 
+		<!-- common-util -->
+		<dependency>
+			<groupId>commons-beanutils</groupId>
+			<artifactId>commons-beanutils</artifactId>
+			<version>1.9.2</version>
+		</dependency>
+
 	</dependencies>
 </project>
