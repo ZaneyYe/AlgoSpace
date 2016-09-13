@@ -6,8 +6,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
      http://www.springframework.org/schema/beans/spring-beans.xsd
      http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
-     http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-3.2.xsd"
-       default-lazy-init="false">
+     http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-3.2.xsd">
 
        <context:annotation-config />
 
@@ -20,9 +19,9 @@
         task:executor/@queue-capacity：等待执行的任务队列的容量
         task:executor/@rejection-policy：当等待队已满时的策略，分为丢弃、由任务执行器直接运行等方式
        -->
-       <task:scheduler id="scheduler" pool-size="10" />
+      <!-- <task:scheduler id="scheduler" pool-size="10" />
        <task:executor id="executor" keep-alive="3600" pool-size="100-200"
                       queue-capacity="500" rejection-policy="CALLER_RUNS" />
-       <task:annotation-driven executor="executor" scheduler="scheduler"/>
+       <task:annotation-driven executor="executor" scheduler="scheduler"/>-->
 
 </beans>

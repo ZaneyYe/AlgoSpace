@@ -11,9 +11,9 @@ public class TestCglib {
 //        carProxy.start();
 
 
-        CglibProxy2 cglibProxy2 = new CglibProxy2();
-        Car car2 = (Car) cglibProxy2.getProxy(Car.class);
-        car2.run();
+//        CglibProxy2 cglibProxy2 = new CglibProxy2();
+//        Car car2 = (Car) cglibProxy2.getProxy(Car.class);
+//        car2.start();
     }
 
 

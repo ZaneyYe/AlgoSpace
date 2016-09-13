@@ -22,11 +22,11 @@ public class Main {
         enhancer.setCallbacks(callbacks);
         LearnCar learnCar = (LearnCar) enhancer.create();
 
-//        learnCar.ceStop();
+        learnCar.ceStop();
 //
 //        learnCar.backCar();
 //
 //        learnCar.stopThenGo();
-        learnCar.guofei(2);
+//        learnCar.guofei(2);
     }
 }

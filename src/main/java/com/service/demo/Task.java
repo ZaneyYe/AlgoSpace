@@ -11,7 +11,7 @@ public class Task{
 
     @Scheduled(cron = "0/5 * * * * ? ")
     public void taskRun(){
-        System.out.println("大哥。。。。。");
+//        System.out.println("大哥。。。。。");
     }
 
 }

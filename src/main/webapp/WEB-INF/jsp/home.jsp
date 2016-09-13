@@ -5,14 +5,14 @@
     <title>first</title>
     <script type="text/javascript" src="js/jquery-2.2.4.js"></script>
     <script type="text/javascript">
-        console.time("first get");
-        for(var i = 1;i <= 10000;i++){
-
-        }
-        console.timeEnd("first get");
+//        console.time("first get");
+//        for(var i = 1;i <= 10000;i++){
+//
+//        }
+//        console.timeEnd("first get");
     </script>
 </head>
 <body>
-<h1>哈哈</h1>
+<h1>哈哈,你大爷</h1>
 </body>
 </html>
