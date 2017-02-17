@@ -14,6 +14,11 @@
 
        <context:component-scan base-package="com.service.demo"/>
 
+       <bean class="com.ko.ConfigBean" id="configBean" >
+           <constructor-arg index="0" value="china" />
+           <constructor-arg index="1" value="gg" />
+       </bean>
+
        <!-- 定时器配置
         task:executor/@pool-size：可以指定执行线程池的初始大小、最大大小
         task:executor/@queue-capacity：等待执行的任务队列的容量

@@ -14,12 +14,20 @@ public class Main {
 //            System.out.println(str);
 //        }
 //        System.out.println(new BigDecimal(14).divide(new BigDecimal(36),2).multiply(new BigDecimal(28)));
-        int[] arr = new int[]{1,2,3,6,345};
-        System.out.println(Arrays.toString(arr));
-
+//        int[] arr = new int[]{1,2,3,6,345};
+//        System.out.println(Arrays.toString(arr));
+//
         List<String> list = Arrays.asList("yzy", "cjj", "ql", "qb");
         System.out.println(list);
 
         System.out.println(Arrays.asList(new AClass("yzy"),new AClass("bb")));
+
+//        System.out.println((-5)%(-2));
+
+
+        String content = "ddegeeg 3 < 1  &dd  &_  &_#  &demo &#12233  &_123213";
+//        content = content.replace("<", "&#60;");
+        content = content.replaceAll("&(?![\\w#]+;|#\\d+)", "&#38;");
+        System.out.println(content);
     }
 }

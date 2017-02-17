@@ -14,9 +14,9 @@ public class MapperTest {
 
     public static void main(String[] args) throws IOException {
         ObjectMapper objectMapper = new ObjectMapper();
-        objectMapper.configure(SerializationFeature.FAIL_ON_EMPTY_BEANS,false);
-        objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES,false);
-        objectMapper.configure(DeserializationFeature.FAIL_ON_NULL_FOR_PRIMITIVES,false);
+        objectMapper.configure(SerializationFeature.FAIL_ON_EMPTY_BEANS,false);  //
+        objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES,false); // false : 反序列化没有的对应属性也不报错。 true 会抛异常
+        objectMapper.configure(DeserializationFeature.FAIL_ON_NULL_FOR_PRIMITIVES,false); //false : 反序列话 json的null ,原始类型给默认值; true 跑json异常
         objectMapper.getSerializerProvider().setNullValueSerializer(new JsonSerializer<Object>() {
             @Override
             public void serialize(Object o, JsonGenerator jsonGenerator,
