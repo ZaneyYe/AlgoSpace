@@ -10,6 +10,8 @@ public class Main {
 
     public static void main(String[] args) {
         ApplicationContext context = new ClassPathXmlApplicationContext("spring/spring-context.xml");
-        context.getBean("task");
+//        context.getBean("task");
+        B b = (B) context.getBean("b");
+        b.run();
     }
 }
