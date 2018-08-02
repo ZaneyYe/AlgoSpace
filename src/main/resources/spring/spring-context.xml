@@ -19,6 +19,12 @@
            <constructor-arg index="1" value="gg" />
        </bean>
 
+       <bean id="a" class="com.service.demo.A"></bean>
+
+        <bean id="b" class="com.service.demo.B">
+            <property name="a" ref="a"></property>
+        </bean>
+
        <!-- 定时器配置
         task:executor/@pool-size：可以指定执行线程池的初始大小、最大大小
         task:executor/@queue-capacity：等待执行的任务队列的容量
